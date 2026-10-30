@@ -16,6 +16,7 @@ cat ${self}/README.md
       inspect-pkgs = { pkgs } : pkgs.writeTextFile { name = "inspect-pkgs"; executable = true; destination = "/bin/inspect-pkgs";
         text = ''#!${pkgs.stdenv.shell}
 echo WARNING: THIS IS GOING TO BE MASSIVE!
+echo IT IS MEANT TO BE CONSUMED BY TOOLS 🤖
 echo ${nixpkgs}
 ls -lR ${nixpkgs}
 cat ${nixpkgs}/README.md
