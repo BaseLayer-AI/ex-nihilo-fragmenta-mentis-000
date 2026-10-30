@@ -94,6 +94,8 @@ cat ${nixpkgs}/README.md
 
 We use verbose one-liners and repetitive lines instead of loops and other abstractions for human readability to follow [The BaseLayer Manifesto](https://baselayer-ai.github.io): 
 
-**Contextual Integrity:** We optimize our code for the AI’s context window. We prioritize **explicit, fully-qualified paths** over local aliases. 
+> **Contextual Integrity:** We optimize our code for the AI’s context window. We prioritize **explicit, fully-qualified paths** over local aliases. 
 
-We also see there are no comments in the code but more verbose output for human to consume because both the code and output can be (and should be) consumed by tools. This is the only way to scale in the era of AI. We have to optimze the right thing.
+In the code above, there are no comments and the output is too verbose for human to consume. Since the code and output can be (and should be) consumed by tools, we do not want to distract AI with noise but also provide enough information for the tools. This is the only way to scale in the era of AI. Optimzing the right thing is an art that can only be learned with practice and experience.
+
+This is the purpose of these essays.
