@@ -27,6 +27,8 @@ cat ${nixpkgs}/README.md
       packages.x86_64-linux.default = readme { pkgs = x86_64-linux; };
 
       packages.aarch64-darwin.inspect-pkgs = inspect-pkgs { pkgs = aarch64-darwin; };
+      packages.aarch64-linux.inspect-pkgs = inspect-pkgs { pkgs = aarch64-linux; };
+      packages.x86_64-linux.inspect-pkgs = inspect-pkgs { pkgs = x86_64-linux; };
     };
 }
 
