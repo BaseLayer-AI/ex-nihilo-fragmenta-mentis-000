@@ -24,9 +24,9 @@ cat ${nixpkgs}/README.md
 
       path-info = { pkgs } : pkgs.writeTextFile { name = "path-info"; executable = true; destination = "/bin/path-info";
         text = ''#!${pkgs.stdenv.shell}
-nix path-info --json --json-format 1 .#default
-nix path-info --json --json-format 1 .#inspect-nixpkgs
-nix path-info --json --json-format 1 .#path-info
+nix path-info --json --json-format 1 --recursive .#default
+nix path-info --json --json-format 1 --recursive .#inspect-nixpkgs
+nix path-info --json --json-format 1 --recursive .#path-info
         '';};
 
     in {
