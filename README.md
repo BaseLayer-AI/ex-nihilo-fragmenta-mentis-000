@@ -54,7 +54,7 @@ You could actually name your repository `ex-nihilo` and have each essay be a dif
 
 ## About the style of this flake.nix
 
-```
+```nix
 {
   description = "Out of Nothing: Fragments of the Mind";
   inputs = { nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/*"; };
