@@ -96,6 +96,10 @@ We use verbose one-liners and repetitive lines instead of loops and other abstra
 
 > **Contextual Integrity:** We optimize our code for the AI’s context window. We prioritize **explicit, fully-qualified paths** over local aliases. 
 
-In the code above, there are no comments and the output is too verbose for human to consume. Since the code and output can be (and should be) consumed by tools, we do not want to distract AI with noise but also provide enough information for the tools. This is the only way to scale in the era of AI. Optimzing the right thing is an art that can only be learned with practice and experience.
+In the code above, there are no comments and the output is too verbose for human to consume.
+
+Since the code and output can be (and should be) consumed by tools, we do not want to distract AI with noise but in the meantime we need to provide enough critical information to the tools. 
+
+Unfortunately (or fortunately) computing resource doesn't scale without limit. Being mindful and optimzing the right thing for the right situation is the only way to scale in this crazy AI era.  It is an art that can only be learned with practice and experience. We can't outsouce critical thinking to the machine.
 
 This is the purpose of these essays.
