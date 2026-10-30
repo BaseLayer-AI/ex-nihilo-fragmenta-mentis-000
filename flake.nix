@@ -7,7 +7,6 @@
       aarch64-darwin = import nixpkgs { system = "aarch64-darwin"; };
       aarch64-linux = import nixpkgs { system = "aarch64-linux"; };
       x86_64-linux = import nixpkgs { system = "x86_64-linux"; };
-      title = self;
       readme = { pkgs } : pkgs.writeTextFile {
         name = "readme";
         executable = true;
