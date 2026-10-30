@@ -103,4 +103,39 @@ Unfortunately (or fortunately) computing resource doesn't scale without limit. B
 This is the purpose of these essays.
 
 ## What do we learn? (with pi agent and llama.cpp)
+
+From the "manifesto" and the structure of the `flake.nix` provided, we learn a new set of principles for **AI-Native Engineering**. 
+
+It suggests a pivot away from traditional "clean code" (which is optimized for human mental models) toward "contextually integral code" (which is optimized for Large Language Model context windows).
+
+Here are the core lessons:
+
+### 1. Contextual Integrity over "Clever" Abstraction
+In traditional programming, we are taught **DRY (Don't Repeat Yourself)**. We create variables, functions, and loops to avoid repetition. However, for an AI, every abstraction is a "pointer" it has to resolve. If the model has to jump back and forth to find what a variable means, it loses coherence.
+*   **The Lesson:** It is often better to be **verbose and repetitive** if it means the information is self-contained within the current block of text. Explicitly writing out a path is better than a local alias because it provides the AI with "ground truth" in every line.
+
+### 2. Optimizing for the "Token Window"
+We are entering an era where the primary interface for code might be an LLM. If the code is too deeply nested or relies on complex, multi-layered abstractions, the "signal" gets lost in the "noise" of the logic.
+*   **The Lesson:** Code should be structured so that any given segment can be understood in isolation. By using "verbose one-liners," you ensure that the AI can "see" the entire operation without needing to hold a massive, complex state in its memory.
+
+### 3. The Human as the Curator of Logic
+The most provocative part of the text is: *"We can't outsource critical thinking to the machine."*
+*   **The Lesson:** While we can optimize the *format* of the code for the machine, the *intent* and the *decision* of what to optimize remain human responsibilities. The human's role is shifting from "the person who writes every line" to "the architect who defines the boundaries and the integrity of the context."
+
+### 4. Resource Mindfulness
+The text acknowledges that computing resources do not scale infinitely. 
+*   **The Lesson:** Efficiency isn't just about how fast the code runs; it’s about how efficiently the *information* is processed. By being "mindful and optimizing the right thing for the right situation," we prevent the "garbage in, garbage out" problem that occurs when we feed messy, over-abstracted code into a model.
+
+### Summary: The Paradigm Shift
+| Traditional Programming | AI-Native Programming (BaseLayer) |
+| :--- | :--- |
+| **Goal:** Minimize repetition (DRY) | **Goal:** Maximize Contextual Integrity |
+| **Mechanism:** Abstraction, variables, loops | **Mechanism:** Explicitness, verbosity, flat paths |
+| **Audience:** The human reader | **Audience:** The AI (consumed by tools) |
+| **Mental Model:** Hierarchical/Nested | **Mental Model:** Linear/Contextual |
+
+In short, we learn that **clarity is the ultimate optimization.** In a world of AI agents, the "best" code isn't the shortest code—it's the code that is the most unambiguous to the machine.
+
+
+Full pi/llama.cpp session: 
 <https://nix-ontouchstart.github.io/nix-ontouchstart-llama_cpp-sessions/2026-10-30T17-45-04-349Z_01a18dea-4a5d-7456-8e08-b206fb187f3f>
