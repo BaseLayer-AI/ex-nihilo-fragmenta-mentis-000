@@ -15,8 +15,8 @@ jobs:
       run: nix run
     - name: "bash -c 'nix run .#inspect-nixpkgs'"
       run: "bash -c 'nix run .#inspect-nixpkgs'"
-    - name: "bash -c 'nix run .#path-info'"
-      run: "bash -c 'nix run .#path-info'"
+    - name: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
+      run: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
 
   aarch64-linux:
     runs-on: ubuntu-26.04-arm
@@ -32,8 +32,8 @@ jobs:
       run: nix run
     - name: "bash -c 'nix run .#inspect-nixpkgs'"
       run: "bash -c 'nix run .#inspect-nixpkgs'"
-    - name: "bash -c 'nix run .#path-info'"
-      run: "bash -c 'nix run .#path-info'"
+    - name: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
+      run: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
 
   x86_64-linux:
     runs-on: ubuntu-26.04
@@ -49,5 +49,5 @@ jobs:
       run: nix run
     - name: "bash -c 'nix run .#inspect-nixpkgs'"
       run: "bash -c 'nix run .#inspect-nixpkgs'"
-    - name: "bash -c 'nix run .#path-info'"
-      run: "bash -c 'nix run .#path-info'"
+    - name: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
+      run: "bash -c 'nix run .#path-info | nix run nixpkgs#jq'"
