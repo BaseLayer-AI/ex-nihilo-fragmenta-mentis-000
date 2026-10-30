@@ -49,8 +49,7 @@ If you want the most "Literate" and "Provocative" feel:
 **Pro-tip for the `flake.nix` structure:** 
 You could actually name your repository `ex-nihilo` and have each essay be a different `flake` or a different `output` in the same flake, making the structure of the code a literal mirror of the "Fragmenta" (fragments) title!
 
-<https://nix-ontouchstart.github.io/nix-ontouchstart-llama_cpp-sessions/2026-10-30_15-01-01_conv_ece08013>
-
+Full llama.cpp session: <https://nix-ontouchstart.github.io/nix-ontouchstart-llama_cpp-sessions/2026-10-30_15-01-01_conv_ece08013>
 
 ## About the style of this flake.nix
 
@@ -102,3 +101,6 @@ Since the code and output can be (and should be) consumed by tools, we do not wa
 Unfortunately (or fortunately) computing resource doesn't scale without limit. Being mindful and optimzing the right thing for the right situation is the only way to scale in this crazy AI era.  It is an art that can only be learned with practice and experience. We can't outsouce critical thinking to the machine.
 
 This is the purpose of these essays.
+
+## What do we learn? (with pi agent and llama.cpp)
+<https://nix-ontouchstart.github.io/nix-ontouchstart-llama_cpp-sessions/2026-10-30T17-45-04-349Z_01a18dea-4a5d-7456-8e08-b206fb187f3f>
