@@ -13,6 +13,8 @@ jobs:
       run: nix --version
     - name: nix run
       run: nix run
+    - name: nix run #inspect-pkgs
+    - run: nix run #inspect-pkgs
 
   aarch64-linux:
     runs-on: ubuntu-26.04-arm
@@ -26,6 +28,8 @@ jobs:
       run: nix --version
     - name: nix run
       run: nix run
+    - name: nix run #inspect-pkgs
+    - run: nix run #inspect-pkgs
 
   x86_64-linux:
     runs-on: ubuntu-26.04
@@ -39,4 +43,6 @@ jobs:
       run: nix --version
     - name: nix run
       run: nix run
+    - name: nix run #inspect-pkgs
+    - run: nix run #inspect-pkgs
 
