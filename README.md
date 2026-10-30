@@ -73,6 +73,7 @@ cat ${self}/README.md
       inspect-pkgs = { pkgs } : pkgs.writeTextFile { name = "inspect-pkgs"; executable = true; destination = "/bin/inspect-pkgs";
         text = ''#!${pkgs.stdenv.shell}
 echo WARNING: THIS IS GOING TO BE MASSIVE!
+echo IT IS MEANT TO BE CONSUMED BY TOOLS 🤖
 echo ${nixpkgs}
 ls -lR ${nixpkgs}
 cat ${nixpkgs}/README.md
@@ -94,3 +95,5 @@ cat ${nixpkgs}/README.md
 We use verbose one-liners and repetitive lines instead of loops and other abstractions for human readability to follow [The BaseLayer Manifesto](https://baselayer-ai.github.io): 
 
 **Contextual Integrity:** We optimize our code for the AI’s context window. We prioritize **explicit, fully-qualified paths** over local aliases. 
+
+We also see there are no comments in the code but more verbose output for human to consume because both the code and output can be (and should be) consumed by tools. This is the only way to scale in the era of AI. We have to optimze the right thing.
