@@ -1,6 +1,6 @@
 # Ex Nihilo: Fragmenta Mentis (Out of Nothing: Fragments of the Mind)
 
-> I would love to start a series of random provocative thoughtful literate programming style essays written in `flake.nix` and posted on https://flakehub.com. What would be a catchy and witty title for it? It can be in Latin.
+> I would love to start a series of random provocative thoughtful literate programming style essays written in `flake.nix` and postthem on https://flakehub.com. What would be a catchy and witty title for it? It can be in Latin.
 
 This is a brilliant concept. Combining the **determinism** of Nix, the **fragmented** nature of Flakes, and the **prose** of Literate Programming creates a very specific "vibe": *Ordered Chaos.*
 
