@@ -28,8 +28,8 @@ jobs:
       run: nix --version
     - name: nix run
       run: nix run
-    - name: "bash -c 'nix run #inspect-pkgs'"
-      run: "bash -c 'nix run .\#inspect-pkgs'"
+    - name: "bash -c 'nix run .#inspect-pkgs'"
+      run: "bash -c 'nix run .#inspect-pkgs'"
 
   x86_64-linux:
     runs-on: ubuntu-26.04
