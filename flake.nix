@@ -13,7 +13,7 @@
 cat ${self}/README.md
         '';};
 
-      inspect-pkgs = { pkgs } : pkgs.writeTextFile { name = "inspect-pkgs"; executable = true; destination = "/bin/inspect-pkgs";
+      inspect-nixpkgs = { pkgs } : pkgs.writeTextFile { name = "inspect-nixpkgs"; executable = true; destination = "/bin/inspect-nixpkgs";
         text = ''#!${pkgs.stdenv.shell}
 echo WARNING: THIS IS GOING TO BE MASSIVE!
 echo IT IS MEANT TO BE CONSUMED BY TOOLS 🤖
@@ -27,9 +27,9 @@ cat ${nixpkgs}/README.md
       packages.aarch64-linux.default = readme { pkgs = aarch64-linux; };
       packages.x86_64-linux.default = readme { pkgs = x86_64-linux; };
 
-      packages.aarch64-darwin.inspect-pkgs = inspect-pkgs { pkgs = aarch64-darwin; };
-      packages.aarch64-linux.inspect-pkgs = inspect-pkgs { pkgs = aarch64-linux; };
-      packages.x86_64-linux.inspect-pkgs = inspect-pkgs { pkgs = x86_64-linux; };
+      packages.aarch64-darwin.inspect-nixpkgs = inspect-nixpkgs { pkgs = aarch64-darwin; };
+      packages.aarch64-linux.inspect-nixpkgs = inspect-nixpkgs { pkgs = aarch64-linux; };
+      packages.x86_64-linux.inspect-nixpkgs = inspect-nixpkgs { pkgs = x86_64-linux; };
     };
 }
 
