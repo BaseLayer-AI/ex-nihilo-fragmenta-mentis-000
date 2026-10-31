@@ -22,11 +22,6 @@ ls -lR ${nixpkgs}
 cat ${nixpkgs}/README.md
         '';};
 
-      path-info = { pkgs } : pkgs.writeTextFile { name = "path-info"; executable = true; destination = "/bin/path-info";
-        text = ''#!${pkgs.stdenv.shell}
-nix path-info --json --json-format 1 --recursive
-        '';};
-
     in {
       packages.aarch64-darwin.default = readme { pkgs = aarch64-darwin; };
       packages.aarch64-linux.default = readme { pkgs = aarch64-linux; };
@@ -35,10 +30,6 @@ nix path-info --json --json-format 1 --recursive
       packages.aarch64-darwin.inspect-nixpkgs = inspect-nixpkgs { pkgs = aarch64-darwin; };
       packages.aarch64-linux.inspect-nixpkgs = inspect-nixpkgs { pkgs = aarch64-linux; };
       packages.x86_64-linux.inspect-nixpkgs = inspect-nixpkgs { pkgs = x86_64-linux; };
-
-      packages.aarch64-darwin.path-info = path-info { pkgs = aarch64-darwin; };
-      packages.aarch64-linux.path-info = path-info { pkgs = aarch64-linux; };
-      packages.x86_64-linux.path-info = path-info { pkgs = x86_64-linux; };
     };
 }
 
