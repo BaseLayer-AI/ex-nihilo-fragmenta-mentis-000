@@ -139,3 +139,5 @@ In short, we learn that **clarity is the ultimate optimization.** In a world of 
 
 Full pi/llama.cpp session: 
 <https://nix-ontouchstart.github.io/nix-ontouchstart-llama_cpp-sessions/2026-10-30T17-45-04-349Z_01a18dea-4a5d-7456-8e08-b206fb187f3f>
+
+[Cargo Cult](https://flakehub.com/flake/BaseLayer-AI/ex-nihilo-fragmenta-mentis-cargo-cult?view=readme)
