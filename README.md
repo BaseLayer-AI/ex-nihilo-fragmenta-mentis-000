@@ -143,3 +143,5 @@ Full pi/llama.cpp session:
 [Cargo Cult](https://flakehub.com/flake/BaseLayer-AI/ex-nihilo-fragmenta-mentis-cargo-cult?view=readme)
 
 [Llama.cpp on aarch64-darwin](https://flakehub.com/flake/BaseLayer-AI/ex-nihilo-fragmenta-mentis-aarch64-darwin-llama-cpp?view=readme)
+
+[Fight artificial complexity in Nix ecosystem](https://flakehub.com/flake/BaseLayer-AI/ex-nihilo-fragmenta-mentis-fight-artificial-complexity?view=readme)
